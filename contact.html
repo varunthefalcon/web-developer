@@ -25,7 +25,7 @@ function lol() {
 <!--    <link href="1page.css" rel="stylesheet">-->
 <style>
     .navbar-brand{
-        font-size: 2em;
+        font-size: 2.5em;
     }    
     li a span{
         margin: 5px;
@@ -36,9 +36,25 @@ function lol() {
     #row div{
         width: 23vw;
     }
-    .col-md-3 {
-        padding: 5px;
-/*        border: 3px solid black;*/
+    .row{
+        text-align: center;
+    }
+    #map{
+     padding-top: 15px;   
+    }
+
+    ul li a:hover, .row div:hover,iframe:hover{
+  box-shadow: 1px 1px 1px 1px #000;
+    }
+    .col-xs-12,.col-xs-12,.col-md{
+        
+    }
+    
+    .col-xs-12{
+        margin-top: 20px;
+    }
+    iframe{
+        overflow: hidden;
     }
 </style>
 </head>
@@ -47,14 +63,22 @@ function lol() {
 <div class="container"> 
     <div class="navbar-header">
     <a href="#" class="navbar-brand"><span>Varun The Falcon</span></a>
-      </div>
-
-<ul class="nav navbar-nav navbar-right">
+    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" >
+    <span class="sr-only"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>        
+    </button>
+    
+    </div>
+    <div id="nav-mobile" class="collapse navbar-collapse">
+<ul class="nav navbar-nav text-center navbar-right" id="nav-list">
 <li><a href="index.html"><span class="glyphicon glyphicon-home"  ></span>Home</a></li>    
 <li><a href="records.html"><span class="glyphicon glyphicon-book"  ></span>records</a></li>    
 <li><a href="Memories.html"><span class="glyphicon glyphicon-fire"  ></span>Memories</a></li>    
-<li  class="active"><a href="contact.html"><span class="glyphicon glyphicon-phone"  ></span>contact me</a></li>    
+<li class="active"><a href="contact.html"><span class="glyphicon glyphicon-phone"  ></span>contact me</a></li>    
 </ul>
+</div>
 </div>
 </nav>
 <!--end of nav bar-->
@@ -62,18 +86,16 @@ function lol() {
     <legend><h2> About page</h2></legend>
     <p>This page is designed using HTML, CSS and bootstrap framework. Romba yosikaadhinga aragoraiya padichitu light ah copy paste pannadhu than... unmaiya light ah than...</p>
     <br>
-    <br>
-    <br>
+
     <legend><h2> Contact me</h2></legend>
-    
+    </fieldset>
     <div class="container">
 <div class="row"> 
-    <div class="col-md-3"> <a href="#"onclick="lol()"><img src="fb.png"  height="150px" width="150px"> </a></div>
-    <div class="col-md-3"> <a href="#"onclick="lol()"><img src="gp.png"  height="150px" width="150px"> </a></div>
-    <div class="col-md-3"> <a href="#"onclick="lol()"><img src="ph.png"  height="150px" width="150px"> </a></div> 
-    <div  id="map"class="col-md-3"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.629502375351!2d80.22534042914995!3d13.066323005807138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52668f280c5ed5%3A0x53ca71451d5c4e9b!2s88%2C+1st+St%2C+Thiruvalluvar+Puram%2C+Choolaimedu%2C+Chennai%2C+Tamil+Nadu+600094!5e0!3m2!1sen!2sin!4v1486770857176"></iframe></div>
+    <div class="col-md-3 col-sm-4 col-xs-12"> <a href="#"onclick="lol()"><img src="fb.png"  height="150px" width="150px"> </a></div>
+    <div class="col-md-3 col-sm-4 col-xs-12"> <a href="#"onclick="lol()"><img src="gp.png"  height="150px" width="150px"> </a></div>
+    <div class="col-md-3 col-sm-4 col-xs-12"> <a href="#"onclick="lol()"><img src="ph.png"  height="150px" width="150px"> </a></div> 
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.629502375351!2d80.22534042914995!3d13.066323005807138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52668f280c5ed5%3A0x53ca71451d5c4e9b!2s88%2C+1st+St%2C+Thiruvalluvar+Puram%2C+Choolaimedu%2C+Chennai%2C+Tamil+Nadu+600094!5e0!3m2!1sen!2sin!4v1486770857176" class="col-md-3 col-sm-12 col-xs-12"></iframe>
     </div>
     </div>
-    </fieldset>
     </body>
 </html>
