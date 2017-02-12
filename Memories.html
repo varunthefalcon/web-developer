@@ -20,7 +20,7 @@
 <!--    <link href="1page.css" rel="stylesheet">-->
 <style>
     .navbar-brand{
-        font-size: 2em;
+        font-size: 2.5em;
     }    
     li a span{
         margin: 5px;
@@ -37,7 +37,9 @@
         padding: 3px;
         box-shadow: 0 0 10px black;
     }
-    
+     ul li a:hover{
+  box-shadow: 1px 1px 1px 1px #000;
+    }
 
 </style>
 </head>
@@ -46,13 +48,22 @@
 <div class="container"> 
     <div class="navbar-header">
     <a href="#" class="navbar-brand"><span>Varun The Falcon</span></a>
-      </div>
-<ul class="nav navbar-nav navbar-right">
-<li><a href="index.html"><span class="glyphicon glyphicon-home"  ></span>Home</a></li>    
+    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" >
+    <span class="sr-only"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>        
+    </button>
+    
+    </div>
+    <div id="nav-mobile" class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right text-center" id="nav-list">
+<li ><a href="index.html"><span class="glyphicon glyphicon-home"  ></span>Home</a></li>    
 <li><a href="records.html"><span class="glyphicon glyphicon-book"  ></span>records</a></li>    
 <li class="active"><a href="Memories.html"><span class="glyphicon glyphicon-fire"  ></span>Memories</a></li>    
 <li><a href="contact.html"><span class="glyphicon glyphicon-phone"  ></span>contact me</a></li>    
 </ul>
+</div>
 </div>
 </nav>
 <!--end of nav bar-->
@@ -66,7 +77,7 @@
         <img src="1.jpg" width="300px" height="600px" >
       </div>
 
-      <div class="item">
+      <div class="item>
         <img src="2.jpg" width="300px" height="600px" >
       </div>
         
@@ -87,11 +98,11 @@
       </div>
     </div>
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
   </div>
