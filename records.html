@@ -20,7 +20,7 @@
 <!--    <link href="1page.css" rel="stylesheet">-->
 <style>
     .navbar-brand{
-        font-size: 2em;
+        font-size: 2.5em;
     }    
     li a span{
         margin: 5px;
@@ -28,7 +28,9 @@
     body { 
         padding-top: 70px; 
     }
-
+    ul li a:hover{
+  box-shadow: 1px 1px 1px 1px #000;
+    }
 
 </style>
 </head>
@@ -37,13 +39,22 @@
 <div class="container"> 
     <div class="navbar-header">
     <a href="#" class="navbar-brand"><span>Varun The Falcon</span></a>
-      </div>
-<ul class="nav navbar-nav navbar-right">
-<li><a href="index.html"><span class="glyphicon glyphicon-home"  ></span>Home</a></li>    
+    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" >
+    <span class="sr-only"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>    
+    <span class="icon-bar"></span>        
+    </button>
+    
+    </div>
+    <div id="nav-mobile" class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right text-center" id="nav-list">
+<li ><a href="index.html"><span class="glyphicon glyphicon-home"  ></span>Home</a></li>    
 <li class="active"><a href="records.html"><span class="glyphicon glyphicon-book"  ></span>records</a></li>    
 <li><a href="Memories.html"><span class="glyphicon glyphicon-fire"  ></span>Memories</a></li>    
 <li><a href="contact.html"><span class="glyphicon glyphicon-phone"  ></span>contact me</a></li>    
 </ul>
+</div>
 </div>
 </nav>
 <!--end of nav bar-->
