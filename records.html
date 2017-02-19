@@ -15,10 +15,14 @@
     
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--    <link href="1page.css" rel="stylesheet">-->
 <style>
+    *{
+        box-sizing: border-box;
+    }
     .navbar-brand{
         font-size: 2.5em;
     }    
@@ -31,10 +35,33 @@
     ul li a:hover{
   box-shadow: 1px 1px 1px 1px #000;
     }
+    .col-md-4:hover,.col-md-3:hover{
+  box-shadow: 1px 1px 1px 1px blue;
+    }
+    .col-md-4, .col-md-3{
+        border-radius: 20px;
+        border: 2px solid #337ab7;
+        text-align: center;
+        background: #ccc;
+        padding: 10px;
+        font-size: 25px;   
+        color: white;
+        padding: 2px;
 
+    }
+    i{
+        font-size: 0.6em;
+        color: black;
+    }
+    .record-label{
+        text-shadow: 1px 2px white;
+        color: black;
+    }
 </style>
 </head>
 <body>
+<!--start of nav bar-->
+
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 <div class="container"> 
     <div class="navbar-header">
@@ -58,6 +85,228 @@
 </div>
 </nav>
 <!--end of nav bar-->
+
+<!--start of jumbotron-->
+<div class="container">
+<h2><span class="label label-primary"> Academic records</span></h2>
+<div class="jumbotron">
+<div class="row">
+<div class="col-md-4">
+<div class="record-border">
+<span class="fa fa-trophy fa-5x">   
+</span><br> 
+<span class="record-label">SSLC :  <b>88.4%</b></span>
+</div>    
     
+</div>    
+<div class="col-md-4">
+<div class="record-border">
+<span class="fa fa-trophy fa-5x">
+</span><br> 
+<span class="record-label">HSC :  <b>87.83%</b></span>
+</div>
+    
+    
+</div>    
+<div class="col-md-4">
+<div class="record-border">
+<span class="fa fa-trophy fa-5x">   
+</span><br> 
+<span class="record-label">B.E :  <b>6.8</b> (CGPA)</span>
+</div>    
+    
+    
+</div>    
+</div>
+</div>    
+</div>
+
+<div class="container">
+<h2><span class="label label-primary"> Technical Skills</span></h2>
+<div class="jumbotron">
+    <div class="row">
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-html5 fa-5x">   
+</span><br> 
+<b class="record-label">HTML</b>
+</div>    
+    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-css3 fa-5x">
+</span><br> 
+<b class="record-label">CSS</b>
+</div>
+    
+    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-code lse\ fa-5x">   
+</span><br> 
+<b class="record-label">PHP</b>
+</div>    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-code fa-5x">   
+</span><br> 
+<b class="record-label">MYSQL</b>
+</div>    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-code fa-5x">   
+</span><br> 
+<b class="record-label">JAVA</b>
+</div>    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-code fa-5x">   
+</span><br> 
+<b class="record-label">C</b>
+</div>    
+</div>
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-code fa-5x">   
+</span><br> 
+<b class="record-label">Arduino</b>
+</div>    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-cog fa-spin fa-5x fa-fw">
+</span><br> 
+<i>expecting some more.....</i>
+</div>    
+</div>    
+
+</div>
+    
+</div>    
+</div>
+
+<div class="container">
+<h2><span class="label label-primary"> Technical Skills</span></h2>
+<div class="jumbotron">
+    <div class="row">
+
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-gamepad fa-5x">   
+</span><br> 
+<b class="record-label">Gaming  </b>
+</div> 
+</div>
+
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-wpbeginner fa-5x">   
+</span><br> 
+<b class="record-label">Painting</b>
+</div>    
+    
+</div>    
+<div class="col-md-3">
+<div class="record-border">
+<span class="fa fa-cog fa-spin fa-5x fa-fw">
+</span><br> 
+<i>still exploring myself...</i>
+</div>    
+</div>    
+
+</div>
+    
+</div>    
+</div>
+<div class="container">
+<h2><span class="label label-primary"> Interview Experience</span></h2>
+<div class="jumbotron">
+<table class="table-striped table table-responsive">
+    <thead><tr>
+    <th>No.</th>
+    <th>Company</th>
+    <th>Type</th>
+    <th>Result</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+    <td>1.</td>
+    <td>Wipro</td>
+    <td>Oncampus</td>
+    <td>Out in Aptitude.</td>
+    </tr>
+    <tr>
+    <td>2.</td>
+    <td>Emphasis</td>
+    <td>Offcampus</td>
+    <td>Selected but backlogs held me back.</td>
+    </tr>
+    <tr>
+    <td>3.</td>
+    <td>Postal department, Chennai.</td>
+    <td>Government Sector</td>
+    <td>Cleared all level but didnt reach the top of final list</td>
+    </tr>
+    <tr>
+    <td>4.</td>
+    <td>Flextronics</td>
+    <td>Offcampus</td>
+    <td>HR wanted me to try better. Marked as a potential candidate</td>
+    </tr>
+    <tr>
+    <td>5.</td>
+    <td>Flextronics</td>
+    <td>Offcampus</td>
+    <td>Refered from previous and rejected since im not a passed out.</td>
+    </tr>
+    <tr>
+    <td>6.</td>
+    <td>Sutherland</td>
+    <td>Walkin-in</td>
+    <td>Worked for a couple of months and absconded for #no reason.</td>
+    </tr>
+    <tr>
+    <td>7.</td>
+    <td>Splendor solutions</td>
+    <td>walk-in</td>
+    <td>Selected and left within a hour.</td>
+    </tr>
+    <tr>
+    <td>8.</td>
+    <td>Contus</td>
+    <td>Walk-in</td>
+    <td>Rejected for insufficient designing skill.</td>
+    </tr>
+    <tr>
+    <td>9.</td>
+    <td>Klix technologies</td>
+    <td>Walk-in</td>
+    <td>Rejected for insufficient programming skill.</td>
+    </tr>
+    <tr>
+    <td>10.</td>
+    <td>Tech mahindra</td>
+    <td>Poolcampus</td>
+    <td>Rejected because of my voice in final assesment.</td>
+    </tr>
+    <tr>
+    <td>11.</td>
+    <td>Sriram value services</td>
+    <td>Walk-in</td>
+    <td>Rejected by receptionist.</td>
+    </tr>
+    </tbody>
+</table>    
+</div>
+</div>    
+
+<!--end of jumbotron-->
+
 </body>
 </html>
