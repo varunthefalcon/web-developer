@@ -2,11 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!--    <link href="1page.css" rel="stylesheet">-->
-<style>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    
+    <style>
     .navbar-brand{
         font-size: 2.5em;
     }    
@@ -16,19 +20,29 @@
     body { 
         padding-top: 70px; 
     }
-    
-    footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #efefef;
-  text-align: center;
-}
-ul li a:hover{
+nav li a:hover{
   box-shadow: 1px 1px 1px 1px #000;
     }
-</style>
+        
+        #bg-text{
+            color: white;
+            font-size: 2vw;
+        }
+        #j
+        {
+            background-image: url(jumbo-bg0.jpg);
+        }
+        .tab-pane{
+            text-align: center;
+        }
+        .varun, p{
+            color: gray;
+            font-size: 2.5vw;
+        }
+        .tab-content p{
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -41,10 +55,9 @@ ul li a:hover{
     <span class="icon-bar"></span>    
     <span class="icon-bar"></span>        
     </button>
-    
     </div>
     <div id="nav-mobile" class="collapse navbar-collapse">
-<ul class="nav navbar-nav navbar-right text-center" id="nav-list">
+<ul class="nav navbar-nav navbar-right text-center nav-pills" id="nav-list">
 <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"  ></span>Home</a></li>    
 <li><a href="records.html"><span class="glyphicon glyphicon-book"  ></span>records</a></li>    
 <li><a href="Memories.html"><span class="glyphicon glyphicon-fire"  ></span>Memories</a></li>    
@@ -54,18 +67,29 @@ ul li a:hover{
 </div>
 </nav>
 <!--end of nav bar-->
-    <div class="jumbotron">
-        <h2 class="text-center">Innum mudikala,,, contact and memories than potruken till now</h2>
+    <div class="container-fluid">
+        <div class="center-content hidden-xs">
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li><a class="varun" href="#V" role="tab" data-toggle="tab">V</a></li>
+    <li><a class="varun" href="#A" role="tab" data-toggle="tab">A</a></li>
+    <li><a class="varun" href="#R"  role="tab" data-toggle="tab">R</a></li>
+    <li><a class="varun" href="#U"  role="tab" data-toggle="tab">U</a></li>
+    <li><a class="varun" href="#N"  role="tab" data-toggle="tab">N</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane" id="V"><p>Vetti, Virgin</p></div>
+      <div class="tab-pane" id="A"><p>Aambala aambala aambala</p></div>
+      <div class="tab-pane" id="R"><p>Roudy. Naanum roudy than</p></div>
+      <div class="tab-pane" id="U"><p>Unity. but single</p></div>
+      <div class="tab-pane" id="N"><p>Nallavan.</p> </div>
+  </div>
+        </div>
+    <div id="j"class="jumbotron">
+            <p id="bg-text">&lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;My life.&lt;/title&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br>&lt;h1&gt; I need a break ! &lt;/h1&gt;<br>&lt;/body&gt;<br>&lt;/html&gt;</p>  
+            </div>
     </div>
+    
 </body>
-    <footer>
-    <div class="row">
-<!--        <div class="col-lg-12">-->
-            <ul class="nav nav-pills nav-justified">
-                <li></li>
-                <li><a href="#">Varun The Falcon</a></li>
-                <li></li>
-            </ul>
-<!--        </div>-->
-    </div></footer>
 </html>
