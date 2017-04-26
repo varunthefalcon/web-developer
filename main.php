@@ -2,12 +2,12 @@
 
 <?php 
 
-$ns = $_REQUEST['ns'];
-$mn = $_REQUEST['mn'];
-$cn = $_REQUEST['cn'];
-// $ns = 'varun';
-// $mn = 'sample';
-// $cn = 'index';
+//$ns = $_REQUEST['ns'];
+//$mn = $_REQUEST['mn'];
+//$cn = $_REQUEST['cn'];
+ $ns = 'varun';
+ $mn = 'sample';
+ $cn = 'index';
 $Cns = ucwords($ns);
 $Cmn = ucwords($mn);
 $Ccn = ucwords($cn);
@@ -19,15 +19,16 @@ fwrite($handle, $data);
 fclose($handle);
 }
 
+$base ='F:/xampp/htdocs/magento/app/code/local/';
 
-mkdir($Cmn,0777);
-mkdir($Cns,0777);
-mkdir($Cmn.'/block',0777);
-mkdir($Cmn.'/controllers',0777);
-mkdir($Cmn.'/etc',0777);
-mkdir($Cmn.'/helper',0777);
-mkdir($Cmn.'/models',0777);
-mkdir($Cmn.'/sql',0777);
+mkdir($base.$Cns,0777);
+mkdir($module=$base.$Cns.'/'.$Cmn,0777);
+mkdir($block=$base.$Cns.'/'.$Cmn.'/block',0777);
+mkdir($controller=$base.$Cns.'/'.$Cmn.'/controllers',0777);
+mkdir($etc=$base.$Cns.'/'.$Cmn.'/etc',0777);
+mkdir($helper=$base.$Cns.'/'.$Cmn.'/helper',0777);
+mkdir($model=$base.$Cns.'/'.$Cmn.'/model',0777);
+mkdir($sql=$base.$Cns.'/'.$Cmn.'/sql',0777);
 
 
 $data = '<?php 
@@ -36,7 +37,7 @@ class '.$Cns.'_'.$Cmn.'_Helper_Data extends Mage_Core_Helper_Abstract
 
 }
 ?>';
-$helperp = $Cmn.'/helper/Data.php';
+$helperp = $helper.'/Data.php';
 filewrite($helperp,$data);
 
 
@@ -51,7 +52,7 @@ $inid = '<?xml version="1.0"?>
     </modules>
 </config>';
 
-$inip = $Cns.'_'.$Cmn.'.xml';
+$inip = $module.'/'.$Cns.'_'.$Cmn.'.xml';
 filewrite($inip,$inid);
 
 $control = '<?php
@@ -66,7 +67,7 @@ class '.$Cns.'_'.$Cmn.'_'.$Ccn.'Controller extends Mage_Core_Controller_Front_Ac
 
 }
 ?>';
-$controlp = $Cmn.'/'.'controllers/'.$Ccn.'Controller.php';
+$controlp = $controller.'/'.$Ccn.'Controller.php';
 filewrite($controlp,$control);
 
 
@@ -92,7 +93,7 @@ $config = '<?xml version="1.0"?>
     </frontend>
 </config>';
 
-$configp = $Cmn.'/etc/config.xml';
+$configp = $etc.'/config.xml';
 
 filewrite($configp,$config);
 
