@@ -1,5 +1,5 @@
 
-
+<h1>success</h1>
 <?php 
 
 //$ns = $_REQUEST['ns'];
